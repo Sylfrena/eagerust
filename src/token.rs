@@ -3,7 +3,7 @@ pub type TokenType = &'static str;
 
 pub struct Token {
     pub token_type: TokenType,
-    pub literal: char,
+    pub literal: &'static str,
 }
 
 /*We are not specifying &str because compiler will infer the type
